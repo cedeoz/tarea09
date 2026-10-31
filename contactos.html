@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS | Condor Xtreme</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/condor.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="contenedor"  style="background-color: white;">
+        <header>
+            <a href="https://www.condorxtreme.com/">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="destino.html">DESTINOS</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                    <li><a href="video.html">VIDEOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h5>Contactos</h5>
+
+    <main id="contactos">
+
+    <!-- Información organizada en una tabla -->
+        <section class="datos-contacto">
+            <h2>Información de contacto</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dirección</th>
+                        <td>
+                            ISIL La Molina - Carreras Técnicas
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Teléfono</th>
+                        <td>+51 017060000</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Correo</th>
+                        <td>sistemas@isil.pe</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Atención al público</h2>
+            <p>
+                Comunícate con nosotros para consultar
+                los horarios y la disponibilidad.
+            </p>
+        </section>
+
+        <!-- Formulario con validación del navegador -->
+        <section class="formulario-contacto">
+            <h2>Escríbenos</h2>
+            <p>Completa tus datos para realizar una consulta.</p>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre y apellido *</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre completo"
+                    minlength="3"
+                    maxlength="80"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="celular">Celular *</label>
+                <input
+                    type="tel"
+                    id="celular"
+                    name="celular"
+                    placeholder="Ejemplo: 987654321"
+                    pattern="9[0-9]{8}"
+                    maxlength="9"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    title="Ingresa 9 números y empieza con 9."
+                    required
+                >
+
+                <label for="correo">Correo electrónico *</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Ejemplo: cesar@isil.pe"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="ruc">RUC (opcional)</label>
+                <input
+                    type="text"
+                    id="ruc"
+                    name="ruc"
+                    placeholder="Escribe los 11 números"
+                    pattern="[0-9]{11}"
+                    maxlength="11"
+                    inputmode="numeric"
+                    title="El RUC debe tener 11 números."
+                >
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Cuéntanos qué servicio te interesa."
+                    minlength="10"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <p class="nota-formulario">
+                    Los campos con * son obligatorios.
+                    Formulario de práctica: no envía información.
+                </p>
+
+            <button type="submit">Enviar</button>
+
+            <p id="resultado" role="status"></p>
+        </form>
+        </section>
+            <section class="mapa-contacto">
+                <h2>Ubícanos</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5668299326776!2d-76.95062432410452!3d-12.07329688816555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e435a93c41%3A0xcdaaa71f277efd64!2sISIL%20La%20Molina%20-%20Carreras%20T%C3%A9cnicas!5e0!3m2!1ses!2spe!4v1793483286157!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </section>
+
+    </main>
+        <footer>
+            <h4>© Condor Xtreme 2024 Todos los derechos reservados</h4>
+            <div>
+                <address>
+                    <ul>
+                        <li>Explanada Costa Verde del Distrito de Magdalena del Mar</li>
+                        <li>+51 947392102</li>
+                        <li>contact@condorxtreme.com</li>
+                    </ul>
+                </address>
+                <nav>
+                    <p>Redes Sociales: </p>
+                    <ul id="redes">
+                        <li><a href="https://web.facebook.com/condorXtreme?_rdc=1&_rdr#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/condor_xtreme"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=51947392102&text=Deseo+realizar+un+consulta+personalizada+sobre...+&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.youtube.com/condorxtremeperu"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script>
+    document.getElementById("formulario").addEventListener(
+        "submit",
+        function(evento) {
+            evento.preventDefault();
+
+            document.getElementById("resultado").textContent =
+                "Los datos son válidos. Esta es una prueba; no se envió el mensaje.";
+        }
+    );
+    </script>
+</body>
+</html>
